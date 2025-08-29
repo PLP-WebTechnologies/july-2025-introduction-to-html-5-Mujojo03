@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>HTML5 Web Development Assignment - Semantic Structure, Accessibility & SEO Best Practices</title>
+
+  <meta name="description" content="A comprehensive HTML5 web page demonstrating semantic structure, accessibility best practices, and SEO optimization techniques for modern web development.">
+
+  <meta name="keywords" content="HTML5, Web Development, Semantic HTML, Accessibility, WCAG, SEO, ARIA, Screen Readers, Search Engine Optimization">
+
+  <meta name="author" content="Rose Jane">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="HTML5 Web Development Assignment - Best Practices">
+  <meta property="og:description" content="Learn HTML5 semantic structure, accessibility, and SEO techniques with practical examples.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon (base64 encoded to avoid external file dependency) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+<body>
+  <!-- Skip Navigation for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER SECTION -->
+  <header role="banner">
+    <h1>Welcome to My HTML5 Web Development Journey</h1>
+    <nav aria-label="Main Navigation" role="navigation">
+      <ul>
+        <li><a href="#about">About This Project</a></li>
+        <li><a href="#semantic-html">Semantic HTML</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+        <li><a href="#seo">SEO Best Practices</a></li>
+        <li><a href="#contact">Contact & Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- ABOUT SECTION -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Web Development Project</h2>
+      <p>
+        This HTML5 page serves as a practical demonstration of modern web development principles. 
+        Created as an educational assignment, it showcases the implementation of:
+      </p>
+      <ul>
+        <li><strong>Semantic HTML5 structure</strong> for better code readability and maintainability</li>
+        <li><strong>Accessibility best practices</strong> following WCAG guidelines</li>
+        <li><strong>SEO optimization techniques</strong> for improved search engine visibility</li>
+      </ul>
+      <p>
+        The page is built using only HTML5, focusing on clean, semantic markup without external CSS or JavaScript, 
+        demonstrating that well-structured HTML forms the foundation of every great website.
+      </p>
+    </section>
+
+    <!-- SEMANTIC HTML SECTION -->
+    <section id="semantic-html" aria-labelledby="semantic-heading">
+      <h2 id="semantic-heading">Semantic HTML5 Structure</h2>
+      
+      <article aria-labelledby="semantic-benefits-heading">
+        <h3 id="semantic-benefits-heading">Why Semantic HTML Matters</h3>
+        <p>
+          Semantic HTML uses elements that clearly describe their meaning in a human- and machine-readable way. 
+          Instead of generic <code><div></code> and <code><span></code> tags, we use purpose-built elements like:
+        </p>
+        
+        <figure>
+          <pre><code><header>    <!-- Site header with navigation -->
+<nav>       <!-- Navigation menu -->
+<main>      <!-- Main content area -->
+<section>   <!-- Thematic grouping of content -->
+<article>   <!-- Self-contained composition -->
+<aside>     <!-- Tangentially related content -->
+<footer>    <!-- Site footer --></code></pre>
+          <figcaption>Common HTML5 semantic elements and their purposes</figcaption>
+        </figure>
+        
+        <h4>Benefits of Semantic HTML:</h4>
+        <ul>
+          <li><strong>Improved Accessibility:</strong> Screen readers can better interpret page structure</li>
+          <li><strong>Better SEO:</strong> Search engines understand content hierarchy and relevance</li>
+          <li><strong>Easier Maintenance:</strong> Clear structure makes code more readable and maintainable</li>
+          <li><strong>Future-Proof:</strong> Semantic elements provide built-in functionality and meaning</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ACCESSIBILITY SECTION -->
+    <section id="accessibility" aria-labelledby="accessibility-heading">
+      <h2 id="accessibility-heading">Web Accessibility Best Practices</h2>
+      
+      <article aria-labelledby="aria-heading">
+        <h3 id="aria-heading">ARIA Landmarks and Attributes</h3>
+        <p>
+          Accessible Rich Internet Applications (ARIA) provides additional semantic information 
+          to assistive technologies through roles and attributes:
+        </p>
+        
+        <ul>
+          <li><code>role="banner"</code> - Identifies site-oriented content</li>
+          <li><code>role="navigation"</code> - Identifies navigation menus</li>
+          <li><code>role="main"</code> - Identifies the main content area</li>
+          <li><code>aria-labelledby</code> - Associates elements with their labels</li>
+          <li><code>aria-label</code> - Provides an accessible name when visible text isn't present</li>
+        </ul>
+        
+        <h4>Key Accessibility Features Implemented:</h4>
+        <ul>
+          <li>Skip navigation link for keyboard users</li>
+          <li>Proper heading hierarchy (h1 → h2 → h3 → h4)</li>
+          <li>Semantic landmarks with ARIA roles</li>
+          <li>Descriptive link text and navigation labels</li>
+          <li>Logical content structure for screen reader navigation</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- SEO SECTION -->
+    <section id="seo" aria-labelledby="seo-heading">
+      <h2 id="seo-heading">Search Engine Optimization (SEO)</h2>
+      
+      <article aria-labelledby="onpage-seo-heading">
+        <h3 id="onpage-seo-heading">On-Page SEO Techniques</h3>
+        <p>
+          Effective SEO begins with well-structured HTML. This page demonstrates several key techniques:
+        </p>
+        
+        <h4>Meta Tags Optimization:</h4>
+        <ul>
+          <li><strong>Title Tag:</strong> Descriptive and includes primary keywords</li>
+          <li><strong>Meta Description:</strong> Compelling summary with key phrases</li>
+          <li><strong>Viewport Tag:</strong> Ensures mobile-friendly rendering</li>
+          <li><strong>Charset Declaration:</strong> Proper character encoding</li>
+        </ul>
+        
+        <h4>Content Structure:</h4>
+        <ul>
+          <li>Logical heading hierarchy with relevant keywords</li>
+          <li>Semantic markup for content relationships</li>
+          <li>Descriptive anchor text for internal links</li>
+          <li>Clean URL structure with fragment identifiers</li>
+        </ul>
+        
+        <h4>Technical SEO:</h4>
+        <ul>
+          <li>Open Graph meta tags for social sharing</li>
+          <li>Robots meta tag for crawl instructions</li>
+          <li>Language attribute for content targeting</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact & Learning Resources</h2>
+      
+      <article aria-labelledby="resources-heading">
+        <h3 id="resources-heading">Web Development Resources</h3>
+        <p>
+          Continue your learning journey with these excellent resources:
+        </p>
+        
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML</a></li>
+          <li><a href="https://webaim.org/" target="_blank" rel="noopener noreferrer">WebAIM - Web Accessibility Resources</a></li>
+          <li><a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central Documentation</a></li>
+          <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">W3C Web Accessibility Initiative</a></li>
+        </ul>
+      </article>
+      
+      <article aria-labelledby="connect-heading">
+        <h3 id="connect-heading">Get in Touch</h3>
+        <p>
+          I'm passionate about web development and always happy to connect with fellow learners and professionals. 
+          Feel free to reach out for collaboration, questions, or just to share ideas!
+        </p>
+        <p>
+          Email: <a href="mailto:rosejane@gmail.com">rosejane@gmail.com</a>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <p>
+      <strong>&copy; 2025 HTML5 Web Development Assignment</strong><br>
+      Built with ❤️ using semantic HTML5, accessibility best practices, and SEO fundamentals
+    </p>
+    <p>
+      <small>This project demonstrates core web development principles without external CSS or JavaScript dependencies.</small>
+    </p>
+  </footer>
+</body>
+</html>
